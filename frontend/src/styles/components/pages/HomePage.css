@@ -1,0 +1,57 @@
+.game-main{
+    background-color: rgba(255, 255, 255, 0.315);
+    height: 800px;
+}
+
+.game-main h1{
+    color: white;
+    margin: 0;
+    padding-top: 4%;
+}
+
+.container {
+      display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "user-screen home-screen"
+      "user-screen home-screen"
+      "user-screen home-screen";
+  }
+  
+  .user-screen { 
+    grid-area: user-screen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+ }
+  
+  .home-screen { 
+    grid-area: home-screen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+ }
+  
+  .img-pokemon{
+    width: 300px;
+  }
+
+button{
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+}
+  .img-pokebola{
+    width: 100px;
+    opacity: 80%;
+
+  }
+
+  .img-pokebola:hover{
+    width: 110px;
+    opacity: 100%;
+  }
