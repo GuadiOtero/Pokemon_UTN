@@ -1,0 +1,149 @@
+.nosotros-main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.315);
+    height: 1100px;
+    align-items: center;
+}
+
+.nosotros-main h2 {
+    margin: 0;
+    padding-top: 4%;
+}
+
+h1{
+    padding-top: 2rem;
+}
+
+/* GRID */
+.team-container {
+    width: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "team-one team-two team-three"
+        "team-about team-about team-about";
+        
+}
+
+.t-cont {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-one {
+    grid-area: team-one;
+}
+
+.team-two {
+    grid-area: team-two;
+}
+
+.team-three {
+    grid-area: team-three;
+}
+
+.team-card {
+    display: flex;
+    position: relative;
+    height: 300px;
+    width: 200px;
+    background-color: rgb(127, 173, 113);
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    transition: 0.5s ease-in-out;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(74, 170, 96, 0.211),rgba(127, 173, 113, 0.482));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 1rem;
+}
+
+.team-card:hover:before {
+    opacity: 12;
+}
+
+.img-team {
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.team-info {
+    position: relative;
+    z-index: 3;
+    transition: 0.5s all;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+}
+
+
+/* CARD CON INFORMACIÓN GENERAL */
+.team-about {
+    grid-area: team-about;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 400px;
+
+
+}
+
+.team-card-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 400px;
+    width: 980px;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: #7FAD71;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.img-about {
+    width: 300px;
+    border-radius: 1rem;
+}
+
+.team-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 2rem;
+
+}
+
+.team-text p{
+    text-align: start;
+}
