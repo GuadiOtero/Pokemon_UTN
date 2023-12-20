@@ -1,0 +1,41 @@
+.novedades-main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.315);
+    height: 1100px;
+    align-items: center;
+}
+
+.novedad-container {
+    width: 50%;
+    height: 200px;
+    display: flex;
+    gap: 2rem;
+    background-color: #7FAD71;
+    border-radius: 1rem;
+    overflow: hidden; 
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.novedad-container img {
+    height: 100%;
+    width: auto;
+    border-radius: 1rem 0rem 0rem 1rem;
+}
+
+.novedad-container:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+.text-container p, h3, h4 {
+    text-align: start;
+    margin-bottom: 0;
+
+}

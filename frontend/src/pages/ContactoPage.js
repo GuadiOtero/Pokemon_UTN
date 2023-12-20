@@ -1,8 +1,10 @@
+import '../styles/components/pages/ContactoPage.css'
+
 const ContactoPage = (props) => {
 
     return (
-        <main className="holder contacto">
-            <div>
+        <div className="main-contacto">
+            <div className="form-container">
                 <h2>Contactame</h2>
                 <form action="" method="" className="formulario">
                     <p>
@@ -30,7 +32,7 @@ const ContactoPage = (props) => {
                     <li><a href="https://www.linkedin.com/in/g-otero/">Linkedin</a></li>
                 </ul>
             </div>
-        </main>
+        </div>
     );
 };
 export default ContactoPage;
