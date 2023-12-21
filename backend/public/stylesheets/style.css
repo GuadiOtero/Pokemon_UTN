@@ -1,8 +1,29 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+body{
+  background-color: #7FAD71;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(237, 255, 236);
+ }
+
+
+
+header img{
+  background-size: cover;
+  width: 100%;
+
+  
+}
+
+.holder{
+margin: 0;
 }
 
 a {
   color: #00B7FF;
+}
+
+p{
+  color: #fff; 
 }
